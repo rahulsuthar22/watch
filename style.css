@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  border: 2px solid rgb(251, 255, 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.hour {
+  background-color: black;
+  width: 20px;
+  height: 120px;
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  right: auto;
+  left: auto;
+  translate: 0 -60px;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+
+.minute {
+  background-color: rgb(223, 11, 11);
+  width: 20px;
+  height: 200px;
+  translate: 0 -100px;
+  border-radius: 10px;
+  transform-origin: bottom;
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  right: auto;
+  left: auto;
+}
+.second {
+  background-color: rgb(6, 46, 119);
+  width: 5px;
+  height: 200px;
+  translate: 0px -100px;
+  border-radius: 10px;
+  transform-origin: bottom;
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  right: auto;
+  left: auto;
+}
+
+.center {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  right: auto;
+  left: auto;
+}
+.twelve,
+.three,
+.six,
+.nine {
+  position: absolute;
+  font-size: 70px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  z-index: -1;
+}
+
+.twelve {
+  top: 0;
+  left: auto;
+  right: auto;
+}
+
+.three {
+  right: 0;
+  top: auto;
+  bottom: auto;
+  /* color: red; */
+}
+
+.six {
+  bottom: 0;
+  left: auto;
+  right: auto;
+  /* color: blue; */
+}
+
+.nine {
+  left: 0;
+  top: auto;
+  bottom: auto;
+  /* color: green; */
+}
